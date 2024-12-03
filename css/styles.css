@@ -1,0 +1,114 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('loginn.jpeg');
+    /* Path to your background image */
+    background-size: cover;
+    /* Cover the entire viewport */
+    background-position: center;
+    /* Center the background image */
+    background-repeat: no-repeat;
+    /* Prevent the image from repeating */
+    color: white;
+    /* Change text color if needed for better visibility */
+    margin: 0;
+    /* Remove default margin */
+    padding: 0;
+    /* Remove default padding */
+    height: 100vh;
+    /* Set height to full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* Center content vertically */
+}
+
+.login {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for login boxes */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 300px;
+    /* Set a fixed width for login forms */
+    text-align: center;
+    /* Center text in login boxes */
+}
+
+h1,
+h2 {
+    margin: 0;
+    /* Remove margin from headings */
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    /* Attractive font for the header */
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    letter-spacing: 2px;
+}
+
+.login {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+}
+
+.login:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #343a40;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1em;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    .login {
+        width: 80%;
+    }
+}
